@@ -5,11 +5,11 @@ Node-based Process Manager
 
 nproc provides a node-based microserver to allow browser-based definition and management of a set of processes.
 
-The idea behind nproc is to be able to have a set of processes, such as your database and other services controllable from a single place.  
+The idea behind nproc is to be able to have a set of processes, such as your database and other services controllable from a single place.
 
 Screenshot
 ----------
-![Screenshot](screenshot.png)
+![Screenshot](https://raw.github.com/mike-feldmeier/nproc/master/screenshot.png)
 
 Installation
 ------------

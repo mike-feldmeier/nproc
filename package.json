@@ -4,7 +4,7 @@
   "homepage": "https://github.com/mike-feldmeier/nproc",
   "bugs": "https://github.com/mike-feldmeier/nproc/issues",
   "author": "Mike Feldmeier <mike.feldmeier@gmail.com> (http://www.mikefeldmeier.com)",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "keywords": [
     "node",
