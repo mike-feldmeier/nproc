@@ -171,9 +171,9 @@ var stop = exports.stop = function(id, callback) {
 
 function load(callback) {
   if(services === null) {
+    services = {};
     fs.readFile(config.datafile, function(err, data) {
       if(!err) {
-        services = {};
 
         var headers = JSON.parse(data);
         for(var i=0; i < headers.length; i++) {
@@ -186,7 +186,9 @@ function load(callback) {
         callback(null, services);
       }
       else {
-        callback(err);
+        if(err.code !== 'ENOENT') {
+          callback(err);
+        }
       }
     });
   }
