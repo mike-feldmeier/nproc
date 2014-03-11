@@ -4,8 +4,9 @@
   "homepage": "https://github.com/mike-feldmeier/nproc",
   "bugs": "https://github.com/mike-feldmeier/nproc/issues",
   "author": "Mike Feldmeier <mike.feldmeier@gmail.com> (http://www.mikefeldmeier.com)",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
+
   "keywords": [
     "node",
     "process",
@@ -14,6 +15,7 @@
     "console",
     "ui"
   ],
+
   "repository": {
     "type": "git",
     "url": "https://github.com/mike-feldmeier/nproc.git"
@@ -29,9 +31,5 @@
     "femto-logger": "*"
   },
 
-  "scripts": {
-    "start": "node application.js"
-  },
-
-  "main": "application"
+  "bin": "./nproc.js"
 }
