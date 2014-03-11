@@ -1,4 +1,5 @@
 nproc
 =====
 
-Node Process Manager
+Node-based Process Manager
+

@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  #list
+    ul
+      li
+        .service.template
+          .header
+            a.state.primary.button(href="#") Start
+            .name
+            a.menu(href="#")
+              img(src="/images/menu.png")
+          .popup-menu
+            .input-group
+              label(for="name") Name
+              input#name(name="name")
+            .input-group
+              label(for="cwd") CWD
+              input#cwd(name="cwd")
+            .input-group
+              label(for="cmd") Command Line
+              input#cmd(name="cmd")
+            .action-group
+              .left-hand
+                a.delete.secondary.button(href="#") Delete
+              .right-hand
+                a.save.primary.button(href="#") Save Changes
+                a.cancel.secondary.button(href="#") Cancel
+    a.add(href="#")
+      img(src="/images/add.png")
+      span add new service
+
+  #detail
+    .name ---
+    .console
+      .output

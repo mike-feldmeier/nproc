@@ -1,0 +1,161 @@
+$primary_button_color = #ecf0f1;
+$secondary_button_color = #fafafa;
+$running_color = #27ae60;
+$window_color = #dde3e7;
+$console_color = #a4a9ae;
+$list_width = 30rem;
+
+*
+  box-sizing border-box
+
+html
+  font-family Raleway, Arial, Helvetica, sans-serif
+  font-size 14px
+
+body
+  padding 1rem
+
+a
+  color #678
+  text-decoration none
+
+a.button
+  border 1px solid #f0f0f0
+  color black
+  display inline-block
+  padding 0.25rem 1rem
+
+  &.primary
+    background-color $primary_button_color
+
+  &.secondary
+    background-color $secondary_button_color
+
+h1
+  font-size 2rem
+  margin-bottom 1rem
+
+#content
+  position absolute
+  top 4rem
+  left 0
+  right 0
+  bottom 0
+
+  #list
+    position absolute
+    top 0
+    left 1rem
+    bottom 1rem
+    width $list_width
+    overflow hidden
+
+    .service
+      background-color $window_color
+      display block
+      margin-bottom 0.25rem
+
+      .header
+        padding 0.5rem 1rem
+
+        .name
+          display inline-block
+          margin-left 1rem
+
+        a.menu
+          float right
+          img
+            width 1.5rem
+            height 1.5rem
+            opacity 0.5
+            vertical-align middle
+
+        &:hover
+          cursor pointer
+
+      .popup-menu
+
+        background-color #f8f8f8
+        padding 0.5rem
+        display none
+
+        .input-group
+          display flex
+          height 2rem
+          line-height 2rem
+
+          label
+            display inline-block
+            width 8rem
+            vertical-align baseline
+
+          input
+            border 0
+            display inline-block
+            flex 1
+            font-family Raleway, Arial, Helvetica, sans-serif
+            padding 0 0.5rem
+
+        .action-group
+          display flex
+          padding 0.125rem
+          margin-top 0.5rem
+
+          .left-hand
+            display inline-block
+            flex 1
+
+            a.button.delete
+              color #a00
+
+          .right-hand
+            display inline-block
+
+            a.button
+              margin-left 0.5rem
+
+      &.running
+        background-color $running_color
+
+        .name
+          color white
+
+      &.template
+        display none
+
+    a.add
+      color $running_color
+      img
+        height 2.5rem
+        width 2.5rem
+        vertical-align middle
+
+  #detail
+    position absolute
+    top 0
+    left $list_width + 1rem
+    right 1rem
+    bottom 1rem
+
+    background-color $window_color
+    padding 0.5rem
+    margin-left 1rem
+
+    display none
+
+    .name
+      font-size 1.5rem
+
+    .console
+      position absolute
+      top 2.5rem
+      left 0.5rem
+      right 0.5rem
+      bottom 0.5rem
+
+      background-color $console_color
+      font-family "Droid Sans Mono"
+      color white
+      padding 1rem
+
+      overflow-y scroll

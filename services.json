@@ -1,0 +1,1 @@
+[{"id":"1","name":"mongo","cwd":"/mongodb-win32-x86_64-2008plus-2.4.9/bin","cmdline":"mongod"},{"id":"2","name":"lattice api server","cwd":"/development/1701.io/lattice-services","cmdline":"node server.js"},{"name":"lattice web server","cwd":"/development/1701.io/lattice-web","cmdline":"node application.js","id":"4bd1b410-a8b8-11e3-b9aa-0f82a4d0aeda"}]

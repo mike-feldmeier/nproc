@@ -1,0 +1,37 @@
+{
+  "name": "nproc",
+  "description": "A process management console written in Node.js",
+  "homepage": "https://github.com/mike-feldmeier/nproc",
+  "bugs": "https://github.com/mike-feldmeier/nproc/issues",
+  "author": "Mike Feldmeier <mike.feldmeier@gmail.com> (http://www.mikefeldmeier.com)",
+  "version": "0.0.1",
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "process",
+    "monitor",
+    "management",
+    "console",
+    "ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mike-feldmeier/nproc.git"
+  },
+
+  "dependencies": {
+    "express": "*",
+    "stylus": "*",
+    "jade": "*",
+    "nib": "*",
+    "node-uuid": "*",
+    "cloneextend": "*",
+    "femto-logger": "*"
+  },
+
+  "scripts": {
+    "start": "node application.js"
+  },
+
+  "main": "application"
+}
